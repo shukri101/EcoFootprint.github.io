@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <form>
+      <label for="distance">Distance travelled to borehole (km):</label>
+      <input type="number" id="distance"><br>
+      <label for="fuel">Fuel consumed by rig (liters):</label>
+      <input type="number" id="fuel"><br>
+      <label for="equipment">Weight of equipment (tonnes):</label>
+      <input type="number" id="equipment"><br>
+      <label for="casing">Casing length (meters):</label>
+      <input type="number" id="casing"><br>
+      <input type="button" value="Calculate Carbon Footprint" onclick="calculate()">
+    </form>
+    <p>Carbon footprint: <span id="carbon"></span></p>
+    <p>Number of trees needed to offset carbon footprint: <span id="tbh"></span></p>
+  </div>
+  <script src="carbonCalculator.js"></script>
+</body>
+</html>
