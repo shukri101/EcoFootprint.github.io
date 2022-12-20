@@ -10,7 +10,7 @@ function calculate() {
 
   // Calculate number of trees needed to offset carbon footprint
   var trees = carbonFootprint / 25;
-  var tbh = (trees /20) / 30;
+  var tbh = (trees /20) / 25;
 
   // Update carbon and tree count in HTML
   document.getElementById("carbon").innerHTML = carbonFootprint + " kg CO2";
