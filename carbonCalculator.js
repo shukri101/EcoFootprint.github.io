@@ -20,6 +20,11 @@ function calculate() {
   // Calculate number of trees needed to offset carbon footprint
   var trees = carbonFootprint / 25;
   var tbh = (trees /20) / 30;
+  
+  // Round results to whole numbers
+  carbonFootprint = Math.round(carbonFootprint);
+  yearsNeeded = Math.round(yearsNeeded);
+  tbh = Math.round(tbh);
 
   // Update carbon, tree count, and years needed in HTML
   document.getElementById("carbon").innerHTML = carbonFootprint + " kg CO2";
